@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="348c3bc3-ea38-4289-9280-7c56d48ce0c0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectId" id="1WQwHH7CIzEYzfCfihkCvL9IxzR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php_blog" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="348c3bc3-ea38-4289-9280-7c56d48ce0c0" name="Default Changelist" comment="" />
+      <created>1579095036126</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579095036126</updated>
+      <workItem from="1579095037815" duration="3250000" />
+      <workItem from="1579453397879" duration="6341000" />
+      <workItem from="1579528526151" duration="4478000" />
+      <workItem from="1579618964491" duration="13673000" />
+      <workItem from="1579697117511" duration="8836000" />
+      <workItem from="1579710799632" duration="2230000" />
+      <workItem from="1579755777663" duration="4147000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579621250017">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1579621250017" />
+    <state x="513" y="163" key="NewPhpClassDialog" timestamp="1579456882456">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="513" y="163" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1579456882456" />
+    <state x="517" y="284" key="NewPhpFileDialog" timestamp="1579758881648">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="284" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1579758881648" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1579634940690">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1579634940690" />
+  </component>
+</project>
