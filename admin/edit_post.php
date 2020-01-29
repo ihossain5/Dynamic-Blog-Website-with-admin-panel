@@ -2,7 +2,7 @@
 <?php include "includes/sidebar.php"?>
 <?php
 if (!isset($_GET['edit_postid']) || $_GET['edit_postid'] == NULL){
-    header('location:postlist.php');
+    header('location:post_list.php');
 }else{
     $id = $_GET['edit_postid'];
 }
@@ -11,6 +11,7 @@ if (!isset($_GET['edit_postid']) || $_GET['edit_postid'] == NULL){
         <div class="box round first grid">
             <h2>Add New Post</h2>
             <?php
+//            Insert post into database
             //                      field Validation
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $title = mysqli_real_escape_string($db->link, $_POST['title']);

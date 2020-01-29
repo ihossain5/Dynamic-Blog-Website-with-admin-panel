@@ -4,6 +4,7 @@
             <div class="box round first grid">
                 <h2>Category List</h2>
                 <?php
+//                For delete Category form Database
                     if (isset($_GET['delid'])){
                         $delid = $_GET['delid'];
                         $delete_query = "DELETE FROM category WHERE id= '$delid'";
@@ -28,6 +29,7 @@
 					</thead>
 					<tbody>
                     <?php
+//                        Show category list from Database
                         $query = "SELECT * FROM category ORDER BY id DESC ";
                         $category = $db->select($query);
                         if ($category){
@@ -38,7 +40,7 @@
 						<tr class="odd gradeX">
 							<td><?php echo $i;?></td>
 							<td><?php echo $result['name'];?></td>
-							<td><a href="edit_cat.php?catid=<?php echo $result['id'];?>">Edit</a>
+							<td><a href="edit_category.php?catid=<?php echo $result['id'];?>">Edit</a>
                                 || <a onclick="return confirm('Are you sure to Delete?')" href="?delid=<?php echo $result['id'];?>">Delete</a></td>
 						</tr>
                     <?php } }?>

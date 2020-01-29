@@ -2,21 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="348c3bc3-ea38-4289-9280-7c56d48ce0c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/add_category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/add_post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/category_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/edit_category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/post_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/title.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/5123981c4b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/view_message.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/copyright.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/copyright.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/css/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/addcat.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/addpost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/catlist.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/delete_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/delete_post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/edit_cat.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/edit_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit_post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/inbox.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/inbox.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/social.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/social.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/titleslogan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/titleslogan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Session.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/postlist.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/titleslogan.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/post_details.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +89,7 @@
       <workItem from="1579697117511" duration="8836000" />
       <workItem from="1579710799632" duration="2230000" />
       <workItem from="1579755777663" duration="4147000" />
-      <workItem from="1580293140529" duration="9451000" />
+      <workItem from="1580293140529" duration="23119000" />
     </task>
     <servers />
   </component>
@@ -100,10 +108,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="163" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1579456882456" />
-    <state x="517" y="284" key="NewPhpFileDialog" timestamp="1579758881648">
+    <state x="517" y="284" key="NewPhpFileDialog" timestamp="1580309671463">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="284" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1579758881648" />
+    <state x="517" y="284" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1580309671463" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1579634940690">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

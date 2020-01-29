@@ -28,7 +28,7 @@ if (!isset($_GET['id']) || $_GET['id'] == NULL){
                             <h5><?php echo $result ['title'];?></h5>
                         </div>
                         <div class="admin">
-                            <img src="images/about/02.jpg" alt="image">
+<!--                            <img src="images/about/02.jpg" alt="image">-->
                             <span class="color_primary">By - <?php echo $result ['author'];?></span>
                         </div>
                         <div class="date color_primary float-left"><?php echo $format->formatDate($result['date']) ;  ?></div>

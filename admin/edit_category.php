@@ -3,7 +3,7 @@
 <?php include "includes/sidebar.php"?>
 <?php
 if (!isset($_GET['catid']) || $_GET['catid'] == NULL){
-    header('location:catlist.php');
+    header('location:category_list.php');
 }else{
     $id = $_GET['catid'];
 }

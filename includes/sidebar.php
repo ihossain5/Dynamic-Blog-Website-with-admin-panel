@@ -23,13 +23,15 @@
             <h3 class="widget_title mb_30 text-capitalize">Category</h3>
             <div class="category_sidebar">
                 <?php
+//                Show category
                 $query ="SELECT * FROM category ";
                 $category = $db->select($query);
                 if ($category){
                 while ($result = $category->fetch_assoc()){
                 ?>
                 <ul>
-                    <li><a href="posts.php?category=<?php echo $result ['id'];?>"><?php echo $result ['name'];?></a><span></span></li>
+                    <li><a href="posts.php?category=<?php echo $result ['id'];?>"><?php echo $result ['name'];?></a>
+                    </li>
                     <?php  } ?> <!--end while-->
                     <?php  } ?>
                 </ul>
