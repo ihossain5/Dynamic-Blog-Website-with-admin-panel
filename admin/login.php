@@ -1,5 +1,5 @@
 <?php include "../classes/Session.php";
-Session::init();
+Session::checkLogin();
 ?>
 <?php include "../config/config.php"?>
 <?php include "../db/Database.php"?>

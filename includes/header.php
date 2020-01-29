@@ -45,27 +45,6 @@ $format = new Format();
 <!--    End Back to top
 ==================================================-->
 
-<!--    Preloader==================================================-->
-<!--<div class="preloader">-->
-<!--    <div class="lds-css ng-scope">-->
-<!--        <div class="lds-spinner" style="100%;height:100%">-->
-<!--            <div></div>-->
-<!--            <div></div>-->
-<!--            <div></div>-->
-<!--            <div></div>-->
-<!--            <div></div>-->
-<!--            <div></div>-->
-<!--            <div></div>-->
-<!--            <div></div>-->
-<!--            <div></div>-->
-<!--            <div></div>-->
-<!--            <div></div>-->
-<!--            <div></div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-<!--    Preloader
-==============================================-->
 
 <!-- Wrapper Start
 ==================================================-->
@@ -76,7 +55,16 @@ $format = new Format();
         <header class="main_nav">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light w-100">
-                    <a class="navbar-brand p_0" href="index.php#top">Blog</a>
+                    <!--               For show blog title  & logo from database-->
+                    <?php
+                    $query = "SELECT * FROM title WHERE id='1'";
+                    $title = $db->select($query);
+                    if ($title){
+                    while ($result = $title->fetch_assoc()){
+
+                    ?>
+                    <a class="navbar-brand p_0" href="index.php#top"><img class="nav-logo" src="admin/<?php echo $result['logo'] ?>" style="height: 50px; width: 60px;" alt="logo"> <span><?php echo $result['title'] ?></span></a>
+                    <?php }}?>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">

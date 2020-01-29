@@ -5,7 +5,17 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-lg-12">
-                <div class="copyright"><p>Runaway @ 2019. All Right Reserved.</p></div>
+                <div class="copyright">
+                    <!--    For show social link from database-->
+                    <?php
+                    $query = "SELECT * FROM footer WHERE id='1'";
+                    $copyright = $db->select($query);
+                    if ($copyright){
+                    while ($result = $copyright->fetch_assoc()){
+                    ?>
+                    <p><?php echo $result['copyright'] ?> <?php echo date('Y')?></p>
+                    <?php } }?>
+                </div>
             </div>
         </div>
     </div>

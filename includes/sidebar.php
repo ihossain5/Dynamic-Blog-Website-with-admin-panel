@@ -4,11 +4,18 @@
             <h3 class="widget_title mb_30 text-capitalize">Follow Me</h3>
             <div class="socal_media">
                 <ul>
-                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <?php
+                    $query = "SELECT * FROM social WHERE id='1'";
+                    $social = $db->select($query);
+                    if ($social){
+                    while ($result = $social->fetch_assoc()){
+                    ?>
+                    <li><a href="<?php echo $result['facebook']?>" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="<?php echo $result['github']?>" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="<?php echo $result['skype']?>" target="_blank"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                    <li><a href="<?php echo $result['linkedin']?>" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="<?php echo $result['google']?>" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                    <?php } }?>
                 </ul>
             </div>
         </div>

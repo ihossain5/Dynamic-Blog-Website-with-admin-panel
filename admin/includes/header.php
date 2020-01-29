@@ -46,13 +46,22 @@ $format = new Format();
 <div class="container_12">
     <div class="grid_12 header-repeat">
         <div id="branding">
+            <!--               For show blog title  & logo from database-->
+            <?php
+            $query = "SELECT * FROM title WHERE id='1'";
+            $title = $db->select($query);
+            if ($title){
+            while ($result = $title->fetch_assoc()){
+
+            ?>
             <div class="floatleft logo">
-                <img src="img/livelogo1.png" alt="Logo" />
+                <img src="<?php echo $result['logo']?>" alt="Logo" />
             </div>
             <div class="floatleft middle">
-                  <h1>Dynamic Blog Website</h1>
+                  <h1><?php echo $result['title']?></h1>
                 <p>Admin Panel</p>
             </div>
+            <?php } }?>
             <div class="floatright">
                 <div class="floatleft">
                     <img src="img/img-profile.jpg" alt="Profile Pic" /></div>
