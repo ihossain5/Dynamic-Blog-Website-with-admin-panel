@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 23, 2020 at 08:24 AM
+-- Generation Time: Jan 30, 2020 at 08:25 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -42,7 +42,52 @@ INSERT INTO `category` (`id`, `name`) VALUES
 (2, 'Python'),
 (3, 'CSS'),
 (4, 'Django'),
-(6, 'Laravel');
+(6, 'Laravel'),
+(7, 'others');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `message` text NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '0',
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`id`, `name`, `subject`, `email`, `message`, `status`, `date`) VALUES
+(1, 'Laravel', 'sd', 'ihprince5@gmail.com', 'Hello', 0, '2020-01-29 14:23:48'),
+(5, 'Ismail', 'PHP', 'abc@gmail.com', 'Hello world, PHP 8 is comming soon', 0, '2020-01-29 15:41:15'),
+(7, 'rifat', 'laravel', 'r@gmail.com', 'hewllo hsdosdjsadojsd', 1, '2020-01-29 15:49:04'),
+(8, 'ovi', 'Css', 'ovi@gmail.com', 'wsadsdsadsadsd', 0, '2020-01-29 15:49:26');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `footer`
+--
+
+CREATE TABLE `footer` (
+  `id` int(11) NOT NULL,
+  `copyright` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `footer`
+--
+
+INSERT INTO `footer` (`id`, `copyright`) VALUES
+(1, 'Md. Ismail Hossain @ All right reserved');
 
 -- --------------------------------------------------------
 
@@ -72,7 +117,49 @@ INSERT INTO `post` (`id`, `category_id`, `title`, `body`, `image`, `author`, `ta
 (16, 2, 'Python in Web development', '<p><span>How does&nbsp;</span><strong>Python</strong><span>&nbsp;fit into&nbsp;</span><strong>web development</strong><span>?&nbsp;</span><strong>Python</strong><span>&nbsp;can be used to build server-side&nbsp;</span><strong>web</strong><span>&nbsp;applications. ... However, most&nbsp;</span><strong>Python</strong><span>&nbsp;developers write their&nbsp;</span><strong>web</strong><span>&nbsp;applications using a combination of&nbsp;</span><strong>Python</strong><span>&nbsp;and JavaScript.&nbsp;</span><strong>Python</strong><span>&nbsp;is executed on the server side while JavaScript is downloaded to the client and run by the&nbsp;</span><strong>web</strong><span>&nbsp;browser.</span></p>\r\n<p><span>How does&nbsp;</span><strong>Python</strong><span>&nbsp;fit into&nbsp;</span><strong>web development</strong><span>?&nbsp;</span><strong>Python</strong><span>&nbsp;can be used to build server-side&nbsp;</span><strong>web</strong><span>&nbsp;applications. ... However, most&nbsp;</span><strong>Python</strong><span>&nbsp;developers write their&nbsp;</span><strong>web</strong><span>&nbsp;applications using a combination of&nbsp;</span><strong>Python</strong><span>&nbsp;and JavaScript.&nbsp;</span><strong>Python</strong><span>&nbsp;is executed on the server side while JavaScript is downloaded to the client and run by the&nbsp;</span><strong>web</strong><span>&nbsp;browser.</span></p>\r\n<p><span>How does&nbsp;</span><strong>Python</strong><span>&nbsp;fit into&nbsp;</span><strong>web development</strong><span>?&nbsp;</span><strong>Python</strong><span>&nbsp;can be used to build server-side&nbsp;</span><strong>web</strong><span>&nbsp;applications. ... However, most&nbsp;</span><strong>Python</strong><span>&nbsp;developers write their&nbsp;</span><strong>web</strong><span>&nbsp;applications using a combination of&nbsp;</span><strong>Python</strong><span>&nbsp;and JavaScript.&nbsp;</span><strong>Python</strong><span>&nbsp;is executed on the server side while JavaScript is downloaded to the client and run by the&nbsp;</span><strong>web</strong><span>&nbsp;browser.</span></p>', 'uploads/c4411e0d08.jpg', 'Ismail Hossain', 'python', '2020-01-23 07:10:52'),
 (17, 2, 'python programming', '<p><span>Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python\'s design philosophy emphasizes code readability with its notable use of significant whitespace</span></p>\r\n<p><span>Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python\'s design philosophy emphasizes code readability with its notable use of significant whitespace</span></p>\r\n<p><span>Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python\'s design philosophy emphasizes code readability with its notable use of significant whitespace</span></p>', 'uploads/d64d680a7f.jpg', 'Ismail Hossain', 'python', '2020-01-23 07:13:39'),
 (18, 6, 'Laravel ', '<p><span>Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model&ndash;view&ndash;controller architectural pattern and based on Symfony.</span></p>\r\n<p><span>Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model&ndash;view&ndash;controller architectural pattern and based on Symfony.</span></p>\r\n<p><span>Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model&ndash;view&ndash;controller architectural pattern and based on Symfony.</span></p>', 'uploads/d66b65b627.png', 'Ismail Hossain', 'laravel', '2020-01-23 07:16:49'),
-(19, 4, 'Django', '<p><span>Django is a Python-based free and open-source web framework, which follows the model-template-view architectural pattern. It is maintained by the Django Software Foundation, an independent organization established as a 501 non-profit. Django\'s primary goal is to ease the creation of complex, database-driven websites.</span></p>\r\n<p><span>Django is a Python-based free and open-source web framework, which follows the model-template-view architectural pattern. It is maintained by the Django Software Foundation, an independent organization established as a 501 non-profit. Django\'s primary goal is to ease the creation of complex, database-driven websites.</span></p>', 'uploads/b2ea31d031.jpg', 'Ismail Hossain', 'django', '2020-01-23 07:18:28');
+(19, 4, 'Django', '<p><span>Django is a Python-based free and open-source web framework, which follows the model-template-view architectural pattern. It is maintained by the Django Software Foundation, an independent organization established as a 501 non-profit. Django\'s primary goal is to ease the creation of complex, database-driven websites.</span></p>\r\n<p><span>Django is a Python-based free and open-source web framework, which follows the model-template-view architectural pattern. It is maintained by the Django Software Foundation, an independent organization established as a 501 non-profit. Django\'s primary goal is to ease the creation of complex, database-driven websites.</span></p>', 'uploads/b2ea31d031.jpg', 'Ismail Hossain', 'django', '2020-01-23 07:18:28'),
+(21, 7, 'Test', '<p>&nbsp;</p>\r\n<p>Where does it come from?</p>\r\n<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>\r\n<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>', 'uploads/5123981c4b.png', 'Ismail Hossain', 'other', '2020-01-29 17:08:30');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `social`
+--
+
+CREATE TABLE `social` (
+  `id` int(11) NOT NULL,
+  `facebook` varchar(255) NOT NULL,
+  `github` varchar(255) NOT NULL,
+  `skype` varchar(255) NOT NULL,
+  `linkedin` varchar(255) NOT NULL,
+  `google` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `social`
+--
+
+INSERT INTO `social` (`id`, `facebook`, `github`, `skype`, `linkedin`, `google`) VALUES
+(1, 'https://www.facebook.com/', 'https://github.com', 'https://www.skype.com/', 'https://www.linkedin.com', 'https://www.google.com/');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `title`
+--
+
+CREATE TABLE `title` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `logo` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `title`
+--
+
+INSERT INTO `title` (`id`, `title`, `logo`) VALUES
+(1, 'Blog website', 'uploads/logo.png');
 
 -- --------------------------------------------------------
 
@@ -104,9 +191,33 @@ ALTER TABLE `category`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `footer`
+--
+ALTER TABLE `footer`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `post`
 --
 ALTER TABLE `post`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `social`
+--
+ALTER TABLE `social`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `title`
+--
+ALTER TABLE `title`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -123,13 +234,37 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `footer`
+--
+ALTER TABLE `footer`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
+--
+-- AUTO_INCREMENT for table `social`
+--
+ALTER TABLE `social`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `title`
+--
+ALTER TABLE `title`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `user`
