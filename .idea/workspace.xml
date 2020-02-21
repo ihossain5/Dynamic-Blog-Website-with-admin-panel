@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="348c3bc3-ea38-4289-9280-7c56d48ce0c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/add_category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/add_post.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/category_list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/edit_category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/post_list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/title.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/5123981c4b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/view_message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/addcat.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/addpost.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/catlist.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/delete_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/delete_post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/edit_cat.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/edit_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit_post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/inbox.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/inbox.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/postlist.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/titleslogan.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/post_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/post_details.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +19,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WQwHH7CIzEYzfCfihkCvL9IxzR" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -53,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel_6" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -90,6 +69,7 @@
       <workItem from="1579710799632" duration="2230000" />
       <workItem from="1579755777663" duration="4147000" />
       <workItem from="1580293140529" duration="23119000" />
+      <workItem from="1580737911303" duration="206000" />
     </task>
     <servers />
   </component>
@@ -104,6 +84,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1579621250017" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1580738127564">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580738127564" />
     <state x="513" y="163" key="NewPhpClassDialog" timestamp="1579456882456">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

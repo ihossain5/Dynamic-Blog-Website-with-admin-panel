@@ -68,7 +68,7 @@
                                         if ($show_category){
                                             while ($result = $show_category->fetch_assoc()){
                                     ?>
-                                    <option value="<?php echo $result['id'] ?>"><?php echo $result['name'] ?></option>
+                                    <option value="<?php echo $result['category_id'] ?>"><?php echo $result['name'] ?></option>
                                <?php  };   //end while
                                         }?>  <!-- end if -->
                                 </select>

@@ -22,7 +22,7 @@ if (!isset($_GET['catid']) || $_GET['catid'] == NULL){
                     if (empty($name)){
                         echo "<span style='color:red;font-size:18px;'>Field must not be empty</span>";
                     } else{
-                        $query = "UPDATE category SET name = '$name'WHERE id='$id'";
+                        $query = "UPDATE category SET name = '$name'WHERE category_id='$id'";
                         $update_cat =  $db->update($query);
                         if ($update_cat){
                             echo "<span style='color:green;font-size:18px;'>Category updated successfully</span>";
@@ -34,7 +34,7 @@ if (!isset($_GET['catid']) || $_GET['catid'] == NULL){
                 ?>
 <!--                Show selected Category -->
                 <?php
-                    $query = "SELECT * FROM category WHERE id = '$id'";
+                    $query = "SELECT * FROM category WHERE category_id = '$id'";
                     $category = $db->select($query);
                     if ($category){
                     while ($result = $category->fetch_assoc()){

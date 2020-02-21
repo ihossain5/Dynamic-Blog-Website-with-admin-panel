@@ -7,7 +7,7 @@
 //                For delete Category form Database
                     if (isset($_GET['delid'])){
                         $delid = $_GET['delid'];
-                        $delete_query = "DELETE FROM category WHERE id= '$delid'";
+                        $delete_query = "DELETE FROM category WHERE category_id= '$delid'";
                         $delete_data = $db->delete($delete_query);
                         if ($delete_data){
                             echo "<span style='color:green;font-size:18px;'>Category deleted successfully</span>";
@@ -30,7 +30,7 @@
 					<tbody>
                     <?php
 //                        Show category list from Database
-                        $query = "SELECT * FROM category ORDER BY id DESC ";
+                        $query = "SELECT * FROM category ORDER BY category_id DESC ";
                         $category = $db->select($query);
                         if ($category){
                             $i = 0;
@@ -40,8 +40,8 @@
 						<tr class="odd gradeX">
 							<td><?php echo $i;?></td>
 							<td><?php echo $result['name'];?></td>
-							<td><a href="edit_category.php?catid=<?php echo $result['id'];?>">Edit</a>
-                                || <a onclick="return confirm('Are you sure to Delete?')" href="?delid=<?php echo $result['id'];?>">Delete</a></td>
+							<td><a href="edit_category.php?catid=<?php echo $result['category_id'];?>">Edit</a>
+                                || <a onclick="return confirm('Are you sure to Delete?')" href="?delid=<?php echo $result['category_id'];?>">Delete</a></td>
 						</tr>
                     <?php } }?>
 					</tbody>

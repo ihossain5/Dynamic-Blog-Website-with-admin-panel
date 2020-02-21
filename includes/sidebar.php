@@ -23,14 +23,17 @@
             <h3 class="widget_title mb_30 text-capitalize">Category</h3>
             <div class="category_sidebar">
                 <?php
-//                Show category
-                $query ="SELECT * FROM category ";
+//                Show category & count post 
+                $query ="SELECT category.name,category.category_id,COUNT(post.id) FROM post
+                            RIGHT JOIN category ON post.category_id = category.category_id
+                            GROUP BY name";
                 $category = $db->select($query);
                 if ($category){
                 while ($result = $category->fetch_assoc()){
                 ?>
                 <ul>
-                    <li><a href="posts.php?category=<?php echo $result ['id'];?>"><?php echo $result ['name'];?></a>
+                    <li><a href="posts.php?category=<?php echo $result ['category_id'];?>"><?php echo $result ['name'];?></a> 
+                            <span><?php echo $result ['COUNT(post.id)'];  ?> </span>
                     </li>
                     <?php  } ?> <!--end while-->
                     <?php  } ?>

@@ -21,7 +21,7 @@
 					<tbody>
                     <?php
                         $query = "SELECT post.*, category.name FROM post INNER JOIN category
-                                   ON post.category_id = category.id
+                                   ON post.category_id = category.category_id
                                    ORDER BY post.title DESC ";
                         $post = $db->select($query);
                         if ($post){

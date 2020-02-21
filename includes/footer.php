@@ -33,6 +33,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/custom.js"></script>
+<script id="dsq-count-scr" src="//ismailhossain.disqus.com/count.js" async></script>
 </body>
 
 <!-- Mirrored from themetrading.com/html/runaway/template/regular/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 May 2019 20:22:25 GMT -->
